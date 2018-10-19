@@ -56,11 +56,6 @@ F 3 "M24M01-RDW6TP" H 5800 2500 50  0000 C CNN
 	1    5800 3100
 	1    0    0    -1  
 $EndComp
-Text Label 6300 3000 0    60   ~ 0
-GND
-NoConn ~ 5300 2900
-Text Label 5300 3200 2    60   ~ 0
-GND
 Text Notes 5500 3850 0    60   ~ 0
 R/W 101011X
 Text Label 5300 3100 2    60   ~ 0
@@ -113,7 +108,7 @@ F 3 "T491A105K016AT7280" H 5500 4550 31  0000 C CNN
 $EndComp
 Text Label 5200 4400 0    60   ~ 0
 EEPROM_VCC
-Text Label 6300 2900 0    60   ~ 0
+Text Label 5300 2900 2    60   ~ 0
 EEPROM_VCC
 Wire Wire Line
 	5200 4400 6400 4400
@@ -129,14 +124,14 @@ Connection ~ 5900 4900
 Wire Wire Line
 	5900 4400 5900 4500
 Connection ~ 5900 4400
-Text HLabel 7000 3100 2    60   Input ~ 0
+Text HLabel 7000 2900 2    60   Input ~ 0
 [SCL]
-Text HLabel 7000 3200 2    60   BiDi ~ 0
+Text HLabel 7000 3000 2    60   BiDi ~ 0
 [SDA]
 Wire Wire Line
-	6300 3100 7000 3100
+	6300 2900 7000 2900
 Wire Wire Line
-	7000 3200 6300 3200
+	7000 3000 6300 3000
 Text Label 6300 7500 2    60   ~ 0
 3V3
 $Comp
@@ -171,4 +166,25 @@ Wire Wire Line
 	6500 7300 6700 7300
 Wire Wire Line
 	6700 7300 6700 7400
+Text Notes 5200 5200 0    60   ~ 0
+Decoupling capacitors. \nPlace as close as possible to the affected IC pin.
+NoConn ~ 5300 3200
+$Comp
+L GND #PWR083
+U 1 1 5BCAEF3C
+P 6400 3400
+F 0 "#PWR083" H 6400 3150 50  0001 C CNN
+F 1 "GND" H 6400 3250 50  0000 C CNN
+F 2 "" H 6400 3400 50  0000 C CNN
+F 3 "" H 6400 3400 50  0000 C CNN
+	1    6400 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3100 6400 3100
+Wire Wire Line
+	6400 3100 6400 3400
+Wire Wire Line
+	6300 3200 6400 3200
+Connection ~ 6400 3200
 $EndSCHEMATC
