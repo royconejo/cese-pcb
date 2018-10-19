@@ -42,7 +42,7 @@ Rev "1.1.1"
 Comp "Salmon Robotics"
 Comment1 "All resistors 1% & 0603\" unless otherwise noted"
 Comment2 "ERC check OK on 2018-10-19"
-Comment3 "EDU-CIAA P1 & P2 are socket headers (M20-7832046 or equiv.)"
+Comment3 ""
 Comment4 "Copyright 2018 Santiago Germino (see LICENSE)"
 $EndDescr
 $Comp
