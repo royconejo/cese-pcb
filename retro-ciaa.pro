@@ -1,4 +1,4 @@
-update=Wed 15 Aug 2018 03:45:26 AM -03
+update=Thu 18 Oct 2018 04:39:12 PM -03
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,16 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=/home/royconejo/Projects/KiCad/Libraries/Layout/SalmonRobotics.kicad_wks
+PlotDirectoryName=esquematicos/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=../../Libraries/Eeschema
@@ -60,13 +70,3 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=salmon
-[schematic_editor]
-version=1
-PageLayoutDescrFile=/home/royconejo/Projects/KiCad/Libraries/Layout/SalmonRobotics.kicad_wks
-PlotDirectoryName=esquematicos/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
