@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:retro-ciaa-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -597,5 +596,5 @@ Text HLabel 4600 3000 2    60   Output ~ 0
 Text Notes 1400 6500 0    60   ~ 0
 RF shield used on the back side of the\nboard to contain and reflect led light \nupwards through the PCB substrate
 Text Notes 4200 6400 0    60   ~ 0
-Glowing logo made with copper stencils and\nled light passing through the PCB substrate
+Glowing logos made with copper stencils and\nled light passing through the PCB substrate
 $EndSCHEMATC

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:retro-ciaa-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -160,11 +159,11 @@ Text Notes 5000 850  3    50   ~ 0
 MSB
 Text Label 7000 800  0    60   ~ 0
 BLUE
-Text Label 4600 3300 0    60   ~ 0
+Text Label 4600 3100 0    60   ~ 0
 3V3
-Text Label 4600 3400 0    60   ~ 0
+Text Label 4600 3200 0    60   ~ 0
 ~RGB_OE
-Text Label 3500 3300 2    60   ~ 0
+Text Label 3500 3100 2    60   ~ 0
 RGB_VCC
 $Comp
 L R R5
@@ -215,7 +214,7 @@ Text Notes 7300 850  3    50   ~ 0
 LSB
 Text Notes 5900 3150 0    60   ~ 0
 Output: RGB 3:3:2 0-0.7V p/p\n@ 75 Ohm Impedance.
-Text Notes 4800 3300 0    60   ~ 0
+Text Notes 4800 3100 0    60   ~ 0
 (A to B)
 $Comp
 L GND #PWR02
@@ -455,7 +454,7 @@ Wire Wire Line
 	2800 3000 2800 1500
 Connection ~ 2800 1500
 Wire Wire Line
-	1100 3400 3500 3400
+	1100 3400 3100 3400
 Wire Wire Line
 	2800 3300 2800 3400
 Connection ~ 2800 3400
@@ -727,12 +726,12 @@ $EndComp
 $Comp
 L SN74ALVC245_MP U2
 U 9 1 5BCF1526
-P 4050 3350
-F 0 "U2" H 3700 3250 60  0000 C CNN
-F 1 "VGA RGB BUFFER" H 4050 3100 50  0000 C CNN
-F 2 "" H 4050 3400 60  0001 C CNN
-F 3 "SN74ALVC245PWR" H 4050 3000 50  0000 C CNN
-	9    4050 3350
+P 4050 3150
+F 0 "U2" H 3700 3050 60  0000 C CNN
+F 1 "VGA RGB BUFFER" H 4050 2900 50  0000 C CNN
+F 2 "" H 4050 3200 60  0001 C CNN
+F 3 "SN74ALVC245PWR" H 4050 2800 50  0000 C CNN
+	9    4050 3150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -746,17 +745,17 @@ F 3 "AC0603FR-0747KL" V 1700 4650 31  0000 C CNN
 	1    1600 4650
 	1    0    0    -1  
 $EndComp
-Text Label 4600 4800 0    60   ~ 0
+Text Label 4600 4700 0    60   ~ 0
 3V3
-Text Label 3500 4800 2    60   ~ 0
+Text Label 3500 4700 2    60   ~ 0
 SYNC_JOY_VCC
-Text Notes 4800 4800 0    60   ~ 0
+Text Notes 4800 4700 0    60   ~ 0
 (A to B)
 Text Label 4600 4400 0    60   ~ 0
 HSYNC_OUT
 Text Label 4600 4200 0    60   ~ 0
 VSYNC_OUT
-Text Label 4600 4900 0    60   ~ 0
+Text Label 4600 4800 0    60   ~ 0
 ~SYNC_JOY_OE
 Wire Wire Line
 	1200 4200 3500 4200
@@ -806,14 +805,14 @@ $EndComp
 $Comp
 L SN74ALVC245_MP U1
 U 9 1 5BCFFF19
-P 4050 4850
+P 4050 4750
 AR Path="/5BCCB2EC/5BCFFF19" Ref="U1"  Part="9" 
 AR Path="/5BCFFF19" Ref="U?"  Part="9" 
-F 0 "U1" H 3700 4750 60  0000 C CNN
-F 1 "VGA SYNC/JOY BUFFER" H 4050 4600 50  0000 C CNN
-F 2 "" H 4050 4900 60  0001 C CNN
-F 3 "SN74ALVC245PWR" H 4050 4500 50  0000 C CNN
-	9    4050 4850
+F 0 "U1" H 3700 4650 60  0000 C CNN
+F 1 "VGA SYNC/JOY BUFFER" H 4050 4500 50  0000 C CNN
+F 2 "" H 4050 4800 60  0001 C CNN
+F 3 "SN74ALVC245PWR" H 4050 4400 50  0000 C CNN
+	9    4050 4750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -828,7 +827,7 @@ F 3 "" H 1100 4900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1100 4900 3500 4900
+	1100 4900 2000 4900
 Connection ~ 1400 4900
 Connection ~ 1600 4900
 Wire Wire Line
@@ -1227,14 +1226,14 @@ Text HLabel 7400 4200 0    60   BiDi ~ 0
 [SDA]
 Text HLabel 9100 4300 2    60   Input ~ 0
 EDDC_EN
-Text HLabel 5300 3400 2    60   Input ~ 0
+Text HLabel 5300 3200 2    60   Input ~ 0
 [~RGB_OE]
-Text HLabel 5300 4900 2    60   Input ~ 0
+Text HLabel 5300 4800 2    60   Input ~ 0
 [~SYNC_JOY_OE]
 Wire Wire Line
-	5300 3400 4600 3400
+	5300 3200 4600 3200
 Wire Wire Line
-	5300 4900 4600 4900
+	5300 4800 4600 4800
 Wire Wire Line
 	7400 4100 7900 4100
 Wire Wire Line
@@ -1291,25 +1290,37 @@ Wire Wire Line
 Wire Wire Line
 	6700 7300 6700 7400
 Wire Notes Line
-	3550 1250 3550 3850
+	3550 1250 3550 3650
 Wire Notes Line
-	3550 3850 4550 3850
+	3550 3650 4550 3650
 Wire Notes Line
-	4550 3850 4550 1250
+	4550 3650 4550 1250
 Wire Notes Line
 	4550 1250 3550 1250
 Wire Notes Line
 	3550 3950 4550 3950
 Wire Notes Line
-	4550 3950 4550 5350
+	4550 3950 4550 5250
 Wire Notes Line
-	4550 5350 3550 5350
+	4550 5250 3550 5250
 Wire Notes Line
-	3550 5350 3550 3950
+	3550 5250 3550 3950
 Text Notes 1000 7600 0    60   ~ 0
 Decoupling capacitors. \nPlace as close as possible to the affected IC pin.
 Text Notes 3400 1325 0    60   ~ 0
 U2
-Text Notes 3000 4025 0    60   ~ 0
-U1 (2 of 8)
+Text Notes 2850 4025 0    60   ~ 0
+U1 (1-2 of 8)
+Wire Wire Line
+	3100 3400 3100 3200
+Wire Wire Line
+	3100 3200 3500 3200
+Wire Wire Line
+	2000 4900 2000 4800
+Wire Wire Line
+	2000 4800 3500 4800
+Wire Notes Line
+	3900 4500 3900 4600
+Wire Notes Line
+	4200 4500 4200 4600
 $EndSCHEMATC
