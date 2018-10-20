@@ -29,17 +29,17 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:salmon
+LIBS:retro-ciaa
 LIBS:retro-ciaa-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 8
-Title "RETRO-CIAA / STORAGE"
-Date "2018-10-19"
+Title "STORAGE"
+Date "2018-10-20"
 Rev "1.1.1"
-Comp "Salmon Robotics"
+Comp "http://www.retro-ciaa.com"
 Comment1 "All resistors 1% & 0603\" unless otherwise noted"
 Comment2 "ERC check OK on 2018-10-19"
 Comment3 "EDU-CIAA P1 & P2 are socket headers (M20-7832046 or equiv.)"

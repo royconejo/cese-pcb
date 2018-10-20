@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:retro-ciaa-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,17 +28,17 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:salmon
+LIBS:retro-ciaa
 LIBS:retro-ciaa-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 8
-Title "RETRO-CIAA"
-Date "2018-10-19"
+Title "SUBSYSTEMS VIEW"
+Date "2018-10-20"
 Rev "1.1.1"
-Comp "Salmon Robotics"
+Comp "http://www.retro-ciaa.com"
 Comment1 "All resistors 1% & 0603\" unless otherwise noted"
 Comment2 "ERC check OK on 2018-10-19"
 Comment3 "T-Rex image by Chromium Project, Sebastien Gabriel"
@@ -102,7 +101,7 @@ $EndSheet
 $Sheet
 S 5000 1900 1800 4100
 U 5BD1EC50
-F0 "EDU-CIAA-NXP Ports" 60
+F0 "EDU-CIAA-NXP Interface" 60
 F1 "educiaa.sch" 60
 F2 "[VSYNC]" O R 6800 3200 60 
 F3 "[~SYNC_JOY_OE]" O R 6800 3600 60 
@@ -237,12 +236,12 @@ $EndComp
 $Comp
 L TREX_SMALL #G1103
 U 1 1 5BD8996B
-P 8000 6350
-F 0 "#G1103" H 8000 6188 60  0001 C CNN
-F 1 "TREX_SMALL" H 8000 6512 60  0001 C CNN
-F 2 "" H 8000 6350 60  0001 C CNN
-F 3 "" H 8000 6350 60  0001 C CNN
-	1    8000 6350
+P 8005 6270
+F 0 "#G1103" H 8005 6108 60  0001 C CNN
+F 1 "TREX_SMALL" H 8005 6432 60  0001 C CNN
+F 2 "" H 8005 6270 60  0001 C CNN
+F 3 "" H 8005 6270 60  0001 C CNN
+	1    8005 6270
 	-1   0    0    -1  
 $EndComp
 $Comp

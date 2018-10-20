@@ -29,17 +29,17 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:salmon
+LIBS:retro-ciaa
 LIBS:retro-ciaa-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 8
-Title "RETRO-CIAA LABELS & MECHANICAL"
-Date "2018-10-19"
+Title "LABELS & MECHANICAL"
+Date "2018-10-20"
 Rev "1.1.1"
-Comp "Salmon Robotics"
+Comp "http://www.retro-ciaa.com"
 Comment1 "All resistors 1% & 0603\" unless otherwise noted"
 Comment2 "ERC check OK on 2018-10-19"
 Comment3 "T-Rex image by Chromium Project, Sebastien Gabriel."

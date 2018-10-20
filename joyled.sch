@@ -29,17 +29,17 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:salmon
+LIBS:retro-ciaa
 LIBS:retro-ciaa-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 8
-Title "RETRO-CIAA / JOYSTICKS & BACKLIGHT"
-Date "2018-10-19"
+Title "JOYSTICKS & BACKLIGHT"
+Date "2018-10-20"
 Rev "1.1.1"
-Comp "Salmon Robotics"
+Comp "http://www.retro-ciaa.com"
 Comment1 "All resistors 1% & 0603\" unless otherwise noted"
 Comment2 "ERC check OK on 2018-10-19"
 Comment3 ""
@@ -271,23 +271,23 @@ NoConn ~ 2500 5500
 $Comp
 L INVADER_LOGO_BACK G3
 U 1 1 5BD0B291
-P 5725 5475
-F 0 "G3" H 5725 5650 60  0000 C CNN
-F 1 "LOGO BACKLIGHT" H 5725 5150 60  0000 C CNN
-F 2 "Salmon:TREX_LOGO_BACK" H 5725 5475 60  0001 C CNN
-F 3 "" H 5725 5475 60  0001 C CNN
-	1    5725 5475
+P 6125 5725
+F 0 "G3" H 6125 5900 60  0000 C CNN
+F 1 "LOGO BACKLIGHT" H 6125 5400 60  0000 C CNN
+F 2 "Salmon:TREX_LOGO_BACK" H 6125 5725 60  0001 C CNN
+F 3 "" H 6125 5725 60  0001 C CNN
+	1    6125 5725
 	1    0    0    -1  
 $EndComp
 $Comp
 L RETROCIAA_LOGO_BACK G4
 U 1 1 5BD0B298
-P 4050 5475
-F 0 "G4" H 4050 5650 60  0000 C CNN
-F 1 "RETRO-CIAA BACKLIGHT" H 4050 5150 60  0000 C CNN
-F 2 "Salmon:RETROCIAA_LOGO_BACK" H 4050 5475 60  0001 C CNN
-F 3 "" H 4050 5475 60  0001 C CNN
-	1    4050 5475
+P 4500 5725
+F 0 "G4" H 4500 5900 60  0000 C CNN
+F 1 "RETRO-CIAA BACKLIGHT" H 4500 5400 60  0000 C CNN
+F 2 "Salmon:RETROCIAA_LOGO_BACK" H 4500 5725 60  0001 C CNN
+F 3 "" H 4500 5725 60  0001 C CNN
+	1    4500 5725
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -368,9 +368,9 @@ AR Path="/5BCCB2EC/5BD0C08A" Ref="U?"  Part="8"
 AR Path="/5BD0C08A" Ref="U?"  Part="8" 
 AR Path="/5BD08AB9/5BD0C08A" Ref="U1"  Part="8" 
 F 0 "U1" H 3700 3350 60  0000 C CNN
-F 1 "VGA SYNC/JOY BUFFER" H 4050 3650 60  0001 C CNN
+F 1 "VGA SYNC/JOY BUFFER" H 4050 3150 50  0000 C CNN
 F 2 "" H 4050 3450 60  0001 C CNN
-F 3 "" H 4050 3450 60  0001 C CNN
+F 3 "SN74ALVC245PWR" H 4050 3050 50  0000 C CNN
 	8    4050 3400
 	1    0    0    -1  
 $EndComp
@@ -396,8 +396,8 @@ Connection ~ 3000 3200
 Connection ~ 2800 3400
 Connection ~ 2600 2400
 Connection ~ 2400 2600
-Text Notes 3300 3700 0    50   ~ 0
-VGA SYNC/JOY BUFFER (On Video Sheet)
+Text Notes 3550 4000 0    50   ~ 0
+U1 ports 1-2 and Power/\nControl pins on Video sheet
 $Comp
 L DB9S_NES8 P3
 U 1 1 5BD0EA91
@@ -486,7 +486,7 @@ Wire Wire Line
 Connection ~ 10500 2000
 Wire Wire Line
 	10500 1900 10400 1900
-Text Notes 5800 2300 0    60   ~ 0
+Text Notes 5750 3850 0    60   ~ 0
 LED supply voltage: 4.83 V\nvoltage drop: 3.3 V Typ.\ncurrent @ 100 Ohm: 15 mA
 Text HLabel 1700 2400 0    60   Input ~ 0
 [JOY_LATCH]
@@ -594,4 +594,8 @@ Text Label 1700 2800 0    60   ~ 0
 JOY1_DATA
 Text HLabel 4600 3000 2    60   Output ~ 0
 [JOY2_DATA_IN]
+Text Notes 1400 6500 0    60   ~ 0
+RF shield used on the back side of the\nboard to contain and reflect led light \nupwards through the PCB substrate
+Text Notes 4200 6400 0    60   ~ 0
+Glowing logo made with copper stencils and\nled light passing through the PCB substrate
 $EndSCHEMATC
