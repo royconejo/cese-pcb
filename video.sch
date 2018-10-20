@@ -212,7 +212,7 @@ Text Notes 7000 850  3    50   ~ 0
 MSB
 Text Notes 7300 850  3    50   ~ 0
 LSB
-Text Notes 5900 3150 0    60   ~ 0
+Text Notes 6300 3200 0    60   ~ 0
 Output: RGB 3:3:2 0-0.7V p/p\n@ 75 Ohm Impedance.
 Text Notes 4800 3100 0    60   ~ 0
 (A to B)
