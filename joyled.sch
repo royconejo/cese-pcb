@@ -395,8 +395,8 @@ Connection ~ 3000 3200
 Connection ~ 2800 3400
 Connection ~ 2600 2400
 Connection ~ 2400 2600
-Text Notes 3550 4000 0    50   ~ 0
-U1 ports 1-2 and Power/\nControl pins on Video sheet
+Text Notes 3400 4000 0    50   ~ 0
+U1 ports 1-2 and Power/Control\npins present in Video sheet.
 $Comp
 L DB9S_NES8 P3
 U 1 1 5BD0EA91

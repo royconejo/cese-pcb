@@ -1320,7 +1320,15 @@ Wire Wire Line
 Wire Wire Line
 	2000 4800 3500 4800
 Wire Notes Line
-	3900 4500 3900 4600
+	3800 4500 3800 4600
 Wire Notes Line
-	4200 4500 4200 4600
+	4300 4500 4300 4600
+Wire Notes Line
+	4000 4550 4100 4550
+Wire Notes Line
+	3950 4550 3850 4550
+Wire Notes Line
+	4150 4550 4250 4550
+Text Notes 4600 5250 0    50   ~ 0
+U1 ports 3-8 are used on \nJoysticks & Backlight sheet.
 $EndSCHEMATC
