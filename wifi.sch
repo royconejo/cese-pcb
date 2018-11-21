@@ -36,8 +36,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 8
 Title "WI-FI & BLUETOOTH"
-Date "2018-10-20"
-Rev "1.1.1"
+Date "2018-11-21"
+Rev "1.2.1"
 Comp "http://www.retro-ciaa.com"
 Comment1 "All resistors 1% & 0603\" unless otherwise noted"
 Comment2 "ERC check OK on 2018-10-19"
