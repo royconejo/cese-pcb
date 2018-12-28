@@ -36,13 +36,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 8
 Title "JOYSTICKS & BACKLIGHT"
-Date "2018-11-21"
-Rev "1.2.1"
+Date "2018-12-28"
+Rev "1.2.2"
 Comp "http://www.retro-ciaa.com"
 Comment1 "All resistors 1% & 0603\" unless otherwise noted"
 Comment2 "ERC check OK on 2018-10-19"
 Comment3 ""
-Comment4 "Copyright 2018 Santiago Germino (see LICENSE)"
+Comment4 "Copyright 2018 Santiago Germino (see LICENCE)"
 $EndDescr
 Text Label 4600 2400 0    60   ~ 0
 JOY_LATCH_OUT

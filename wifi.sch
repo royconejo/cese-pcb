@@ -36,13 +36,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 8
 Title "WI-FI & BLUETOOTH"
-Date "2018-11-21"
-Rev "1.2.1"
+Date "2018-12-28"
+Rev "1.2.2"
 Comp "http://www.retro-ciaa.com"
 Comment1 "All resistors 1% & 0603\" unless otherwise noted"
 Comment2 "ERC check OK on 2018-10-19"
 Comment3 ""
-Comment4 "Copyright 2018 Santiago Germino (see LICENSE)"
+Comment4 "Copyright 2018 Santiago Germino (see LICENCE)"
 $EndDescr
 $Comp
 L ESP-WROOM-32 U6
